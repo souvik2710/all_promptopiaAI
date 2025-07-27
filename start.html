@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Tools</title>
+  <style>
+    :root {
+      --google-blue:  #4285F4;
+      --google-red:   #EA4335;
+      --google-yellow:#FBBC05;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .top-section {
+      display: flex;
+      flex-direction: column;
+      height: 50vh;
+    }
+
+    @media (min-width: 768px) {
+      .top-section {
+        flex-direction: row;
+      }
+    }
+
+    .tool {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .tool h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .tool p {
+      max-width: 480px;
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    .blue   { background-color: var(--google-blue); color: white; }
+    .red    { background-color: var(--google-red); color: white; }
+    .yellow { background-color: var(--google-yellow); color: black; }
+
+    .tool a button {
+      padding: 10px 20px;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      background: #fff;
+      color: #000;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .tool a button:hover {
+      background: #eee;
+    }
+
+    .bottom-image {
+      height: 50vh;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .bottom-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP HALF -->
+  <div class="top-section">
+    <div class="tool blue">
+      <h2>InvestGPT – Full portfolio analysis & prediction</h2>
+      <p>AI‑driven insights that analyse your positions and forecast market behaviour using Streamlit & Gemini Pro.</p>
+      <a href="https://promptopiafuture.streamlit.app/" target="_blank">
+        <button>Launch InvestGPT</button>
+      </a>
+    </div>
+
+    <div class="tool red">
+      <h2>FI Money – Stock‑transaction breakdown</h2>
+      <p>View and analyse every stock trade on monthly, weekly or daily time‑frames with clean visual summaries.</p>
+      <a href="https://souvik2710-promptopia-three-stream-main-6thnal.streamlit.app/" target="_blank">
+        <button>Open FI Money</button>
+      </a>
+    </div>
+
+    <div class="tool yellow">
+      <h2>StockSage – Yahoo Finance + Firebase Studio</h2>
+      <p>Get live quotes, key metrics and automatic reports delivered through a Firebase‑hosted interface.</p>
+      <a href="https://studio--stocksage-8m010.us-central1.hosted.app" target="_blank">
+        <button>Visit StockSage</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- BOTTOM HALF -->
+  <div class="bottom-image">
+    <img src="https://diplo-media.s3.eu-central-1.amazonaws.com/2024/09/Goocle-AI-1024x576.jpg"
+         alt="AI‑themed illustration">
+  </div>
+
+</body>
+</html>
